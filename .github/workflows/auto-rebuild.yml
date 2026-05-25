@@ -1,0 +1,19 @@
+name: Auto Rebuild Docker Image
+
+on:
+  push:
+    branches:
+      - CraftBot_live
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Build Docker image
+        run: docker build -t craftbot:latest .
+
+      - name: Confirm build success
+        run: echo "Image rebuilt successfully on branch CraftBot_live"
