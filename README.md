@@ -1,4 +1,4 @@
-
+    
 <div align="center">
     <img src="assets/craftbot_readme_banner.png" alt="CraftBot Banner" width="1280"/>
 </div>
